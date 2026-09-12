@@ -220,3 +220,71 @@ $.fn.isInViewport = function () {
     var viewportBottom = viewportTop + $(window).height();
     return elementBottom > viewportTop && elementTop < viewportBottom;
 };
+
+/* FIX QUIZ GREGORI ART — GitHub Pages */
+(function () {
+    document.addEventListener('click', function (event) {
+        var button = event.target.closest('button[onclick]');
+        if (!button) return;
+
+        var code = button.getAttribute('onclick') || '';
+        var match = code.match(
+            /comprova\(\s*['"]([^'"]+)['"]\s*,\s*['"]([^'"]+)['"]\s*\)/
+        );
+
+        if (!match) return;
+
+        var id = match[1];
+        var correctAnswer = match[2];
+
+        var scope =
+            button.closest('.iDevice_content') ||
+            button.closest('.iDevice_wrapper') ||
+            document;
+
+        var radios = Array.prototype.filter.call(
+            scope.querySelectorAll('input[type="radio"]'),
+            function (radio) {
+                return radio.name === id;
+            }
+        );
+
+        if (!radios.length) return;
+
+        event.preventDefault();
+        event.stopImmediatePropagation();
+
+        var selected = radios.find(function (radio) {
+            return radio.checked;
+        });
+
+        var feedback = null;
+        var block = button.closest('.quiz');
+
+        while (block && !feedback) {
+            feedback = block.querySelector('.feedback');
+            block = block.nextElementSibling;
+        }
+
+        if (!feedback) {
+            feedback = scope.querySelector('.feedback');
+        }
+
+        if (!feedback) return;
+
+        if (!selected) {
+            feedback.textContent = 'Selecciona una resposta.';
+            feedback.className = 'feedback ko';
+            return;
+        }
+
+        var correct = selected.value === correctAnswer;
+
+        feedback.textContent = correct
+            ? 'Correcte. Continua!'
+            : 'Encara no. Revisa la pista i torna-ho a provar.';
+
+        feedback.className =
+            'feedback ' + (correct ? 'ok' : 'ko');
+    }, true);
+})();
