@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="va" id="exe-2026090518581800006D">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.3">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>8. Microgaleria | SA01 · Mirar, pensar i parlar d’art</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Situació d’aprenentatge visual i interactiva per iniciar el comentari historicoartístic en 2n de Batxillerat.">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script>window.exeXapi={"odeId":"20260905185818000384","packageTitle":"SA01 · Mirar, pensar i parlar d’art","language":"va"};</script><script src="../libs/xapi/exe_xapi.js"> </script><script src="../search_index.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<script src="../libs/exe_atools/exe_atools.js"> </script><link rel="stylesheet" href="../libs/exe_atools/exe_atools.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css">
+<style>
+:root{
+  --ga-primary:#24345f;
+  --ga-accent:#c69a4b;
+  --ga-text:#25282d;
+  --ga-muted:#667085;
+  --ga-bg:#f7f8fa;
+  --ga-card:#ffffff;
+  --ga-border:#e4e7ec;
+  --ga-success:#3d8b5a;
+  --ga-danger:#c9534d;
+}
+
+/* =========================
+   BASE
+========================= */
+
+html,
+body{
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Arial,
+    sans-serif !important;
+
+  color:var(--ga-text);
+  background:var(--ga-bg);
+  line-height:1.65;
+}
+
+.sa{
+  max-width:1120px;
+  margin:0 auto;
+  color:var(--ga-text);
+}
+
+/* =========================
+   TÍTOLS
+========================= */
+
+.sa h1,
+.sa h2,
+.sa h3{
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif !important;
+
+  color:var(--ga-primary) !important;
+}
+
+.sa > h1,
+.sa > h2:first-child{
+  font-size:2.35rem !important;
+  line-height:1.12;
+  letter-spacing:-0.025em;
+  font-weight:700 !important;
+  margin-bottom:22px;
+}
+
+.sa h2{
+  font-size:1.8rem !important;
+  margin-top:1.8rem;
+  margin-bottom:1rem;
+}
+
+.sa h3{
+  font-size:1.3rem !important;
+  margin-top:30px;
+  margin-bottom:13px;
+}
+
+/* =========================
+   METADADES
+========================= */
+
+.meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:0 0 18px;
+}
+
+.tag{
+  display:inline-flex;
+  align-items:center;
+  padding:6px 11px;
+
+  background:#eef2f7;
+  border:1px solid #dfe4ea;
+  border-radius:999px;
+
+  color:var(--ga-primary);
+
+  font-size:.78rem;
+  font-weight:700;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+  background:linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #f2f4f8 100%
+  );
+
+  border:1px solid var(--ga-border);
+  border-radius:20px;
+
+  padding:30px 34px;
+  margin:18px 0 24px;
+
+  box-shadow:
+    0 10px 28px rgba(16,24,40,.06);
+}
+
+.hero .small{
+  color:var(--ga-accent);
+
+  text-transform:uppercase;
+  letter-spacing:.08em;
+
+  font-size:.8rem;
+  font-weight:800;
+
+  margin-bottom:8px;
+}
+
+.hero h2{
+  margin:.2rem 0 .7rem !important;
+}
+
+.hero p{
+  font-size:1.07rem;
+  margin-bottom:0;
+}
+
+/* =========================
+   REPTE / IDEA CLAU / ALERTA
+========================= */
+
+.repte{
+  background:#eef2f7;
+
+  border-left:5px solid var(--ga-primary);
+
+  padding:18px 22px;
+  margin:24px 0;
+
+  border-radius:0 14px 14px 0;
+}
+
+.clau,
+.idea-clau{
+  background:#fff8e9;
+
+  border-left:5px solid var(--ga-accent);
+
+  padding:18px 22px;
+  margin:26px 0;
+
+  border-radius:0 14px 14px 0;
+}
+
+.alerta{
+  background:#fff3ec;
+
+  border-left:5px solid #c46a37;
+
+  padding:18px 22px;
+  margin:26px 0;
+
+  border-radius:0 14px 14px 0;
+}
+
+.fitxa{
+  background:#f1f5f3;
+
+  border-left:5px solid #567b68;
+
+  padding:18px 22px;
+  margin:26px 0;
+
+  border-radius:0 14px 14px 0;
+}
+
+/* =========================
+   IMATGES
+========================= */
+
+.image-slot{
+  margin:26px 0 34px;
+}
+
+.image-slot img,
+.sa img{
+  max-width:100% !important;
+  height:auto !important;
+}
+
+.image-slot img{
+  width:100% !important;
+
+  display:block;
+  margin:0 auto;
+
+  border-radius:18px;
+
+  box-shadow:
+    0 12px 28px rgba(16,24,40,.12);
+}
+
+/* =========================
+   TARGETES
+========================= */
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+
+  margin:18px 0 30px;
+}
+
+.grid-3{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+}
+
+.card{
+  background:var(--ga-card);
+
+  border:1px solid var(--ga-border);
+  border-radius:17px;
+
+  padding:23px;
+
+  box-shadow:
+    0 6px 18px rgba(16,24,40,.05);
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease;
+}
+
+.card:hover{
+  transform:translateY(-2px);
+
+  box-shadow:
+    0 10px 25px rgba(16,24,40,.09);
+}
+
+.card .icon{
+  font-size:2rem;
+  margin-bottom:11px;
+}
+
+.card h3{
+  margin-top:0 !important;
+}
+
+/* =========================
+   RUTA
+========================= */
+
+.route{
+  counter-reset:pas;
+  list-style:none;
+
+  padding:0;
+  margin:20px 0 34px;
+}
+
+.route li{
+  counter-increment:pas;
+
+  position:relative;
+
+  padding:13px 16px 13px 52px;
+  margin-bottom:9px;
+
+  background:white;
+
+  border:1px solid var(--ga-border);
+  border-radius:11px;
+}
+
+.route li::before{
+  content:counter(pas);
+
+  position:absolute;
+  left:14px;
+  top:50%;
+
+  transform:translateY(-50%);
+
+  width:26px;
+  height:26px;
+
+  border-radius:50%;
+
+  background:var(--ga-primary);
+  color:white;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:.8rem;
+  font-weight:700;
+}
+
+/* =========================
+   LÍNIA DEL TEMPS
+========================= */
+
+.timeline{
+  list-style:none;
+  padding:0 0 0 24px;
+  margin:24px 0;
+
+  border-left:3px solid var(--ga-accent);
+}
+
+.timeline li{
+  position:relative;
+
+  margin:0 0 18px;
+  padding:13px 16px;
+
+  background:#ffffff;
+
+  border:1px solid var(--ga-border);
+  border-radius:11px;
+}
+
+.timeline li::before{
+  content:"";
+
+  position:absolute;
+  left:-31px;
+  top:18px;
+
+  width:11px;
+  height:11px;
+
+  border-radius:50%;
+
+  background:var(--ga-primary);
+  border:3px solid #ffffff;
+
+  box-shadow:0 0 0 2px var(--ga-primary);
+}
+
+/* =========================
+   DESPLEGABLES
+========================= */
+
+details{
+  background:#ffffff;
+
+  border:1px solid var(--ga-border);
+  border-radius:15px;
+
+  margin:20px 0;
+  overflow:hidden;
+
+  box-shadow:
+    0 5px 16px rgba(16,24,40,.05);
+}
+
+details summary{
+  position:relative;
+
+  cursor:pointer;
+
+  list-style:none;
+
+  padding:16px 50px 16px 19px;
+
+  background:linear-gradient(
+    135deg,
+    #f8f9fb,
+    #eef2f7
+  );
+
+  color:var(--ga-primary);
+
+  font-weight:800;
+}
+
+details summary::-webkit-details-marker{
+  display:none;
+}
+
+details summary::after{
+  content:"⌄";
+
+  position:absolute;
+  right:18px;
+  top:50%;
+
+  transform:
+    translateY(-50%)
+    rotate(0deg);
+
+  color:var(--ga-accent);
+
+  font-size:1.3rem;
+
+  transition:transform .2s ease;
+}
+
+details[open] summary::after{
+  transform:
+    translateY(-50%)
+    rotate(180deg);
+}
+
+details[open] summary{
+  border-bottom:1px solid var(--ga-border);
+}
+
+details > *:not(summary){
+  margin-left:18px;
+  margin-right:18px;
+}
+
+/* =========================
+   TAULES
+========================= */
+
+.table-responsive{
+  width:100%;
+  max-width:100%;
+
+  margin:18px 0 30px;
+
+  overflow-x:auto;
+
+  -webkit-overflow-scrolling:touch;
+}
+
+.sa table,
+.art-table,
+.iDevice_content table{
+  width:100% !important;
+  max-width:100% !important;
+
+  border-collapse:collapse;
+
+  background:white;
+
+  margin:0 !important;
+}
+
+.sa th,
+.art-table th,
+.iDevice_content th{
+  background:var(--ga-primary);
+  color:white;
+
+  text-align:left;
+
+  padding:14px 15px;
+
+  font-weight:700;
+}
+
+.sa td,
+.art-table td,
+.iDevice_content td{
+  padding:14px 15px;
+
+  vertical-align:top;
+
+  border-bottom:1px solid var(--ga-border);
+
+  white-space:normal !important;
+  overflow-wrap:anywhere;
+}
+
+.sa tbody tr:nth-child(even),
+.art-table tbody tr:nth-child(even){
+  background:#f8f9fb;
+}
+
+/* =========================
+   QUIZ
+========================= */
+
+.quiz{
+  background:white;
+
+  border:1px solid var(--ga-border);
+  border-radius:16px;
+
+  padding:21px 23px;
+  margin:26px 0;
+
+  box-shadow:
+    0 5px 18px rgba(16,24,40,.05);
+}
+
+.quiz label{
+  display:block;
+
+  padding:10px 12px;
+  margin:7px 0;
+
+  border:1px solid var(--ga-border);
+  border-radius:10px;
+
+  cursor:pointer;
+}
+
+.quiz label:hover{
+  background:#f7f8fa;
+}
+
+.quiz input{
+  margin-right:8px;
+}
+
+.quiz button{
+  border:0;
+  border-radius:9px;
+
+  padding:10px 15px;
+  margin:8px 6px 0 0;
+
+  background:var(--ga-primary);
+  color:white;
+
+  font-weight:700;
+
+  cursor:pointer;
+}
+
+.quiz button + button{
+  background:#eef2f7;
+  color:var(--ga-primary);
+}
+
+/* =========================
+   FEEDBACK
+========================= */
+
+.feedback{
+  margin-top:12px;
+
+  padding:11px 14px;
+
+  border-radius:9px;
+
+  font-weight:600;
+}
+
+.feedback.ok{
+  background:#edf8f1;
+
+  border-left:4px solid var(--ga-success);
+}
+
+.feedback.ko{
+  background:#fff1ef;
+
+  border-left:4px solid var(--ga-danger);
+}
+
+/* =========================
+   BOTÓ
+========================= */
+
+.btn{
+  display:inline-block;
+
+  padding:12px 19px;
+
+  background:var(--ga-primary);
+  color:white !important;
+
+  border-radius:10px;
+
+  text-decoration:none !important;
+
+  font-weight:700;
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+
+  box-shadow:
+    0 7px 17px rgba(36,52,95,.22);
+}
+
+/* =========================
+   IDEVICES EXELEARNING
+========================= */
+
+.iDevice_wrapper{
+  border-radius:17px !important;
+  overflow:hidden;
+
+  margin:1.6rem 0 !important;
+
+  box-shadow:
+    0 5px 18px rgba(16,24,40,.05);
+}
+
+/* =========================
+   PEU
+========================= */
+
+.peu-exe{
+  margin-top:55px;
+
+  padding:23px 28px;
+
+  background:var(--ga-primary);
+  color:white;
+
+  border-top:4px solid var(--ga-accent);
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+
+  font-size:.87rem;
+}
+
+.peu-dreta{
+  text-align:right;
+  opacity:.85;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width:900px){
+
+  .grid-3{
+    grid-template-columns:1fr;
+  }
+
+}
+
+/* =========================
+   MÒBIL
+========================= */
+
+@media(max-width:700px){
+
+  .sa > h1,
+  .sa > h2:first-child{
+    font-size:1.9rem !important;
+  }
+
+  .sa h2{
+    font-size:1.5rem !important;
+  }
+
+  .hero{
+    padding:22px;
+    border-radius:15px;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  .sa th,
+  .sa td,
+  .art-table th,
+  .art-table td{
+    padding:10px 9px;
+    font-size:.9rem;
+  }
+
+  .peu-exe{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .peu-dreta{
+    text-align:left;
+  }
+
+}
+
+/* =========================
+   ACCESSIBILITAT
+========================= */
+
+a:focus,
+button:focus,
+summary:focus{
+  outline:3px solid rgba(198,154,75,.45);
+  outline-offset:3px;
+}
+
+/* =========================
+   IMPRESSIÓ
+========================= */
+
+@media print{
+
+  body{
+    background:white;
+  }
+
+  .hero,
+  .card,
+  .quiz,
+  details{
+    box-shadow:none !important;
+  }
+
+  .btn{
+    background:white !important;
+    color:black !important;
+    border:1px solid black;
+  }
+
+}
+</style>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#2026090518581800006D" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Inici</a>
+<ul class="other-section">
+<li> <a href="../html/1-es-art.html" class="no-ch">1. És art?</a>
+</li>
+<li> <a href="../html/2-que-es-lart.html" class="no-ch">2. Què és l’art?</a>
+</li>
+<li> <a href="../html/3-materialitat-i-llenguatges.html" class="no-ch">3. Materialitat i llenguatges</a>
+</li>
+<li> <a href="../html/4-aprendre-a-mirar.html" class="no-ch">4. Aprendre a mirar</a>
+</li>
+<li> <a href="../html/5-funcio-social-i-fonts.html" class="no-ch">5. Funció social i fonts</a>
+</li>
+<li> <a href="../html/6-primer-comentari.html" class="no-ch">6. Primer comentari</a>
+</li>
+<li> <a href="../html/7-coavaluar-i-millorar.html" class="no-ch">7. Coavaluar i millorar</a>
+</li>
+<li class="active"> <a href="../html/8-microgaleria.html" class="active no-ch">8. Microgaleria</a>
+</li>
+<li> <a href="../html/plantilla-de-comentari.html" class="no-ch">Plantilla de comentari</a>
+</li>
+<li> <a href="../html/avaluacio.html" class="no-ch">Avaluació</a>
+</li>
+<li> <a href="../html/guia-docent-i-credits.html" class="no-ch">Guia docent i crèdits</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="2026090518581800006D" class="page"> <div id="exe-client-search" data-block-order-string="Caja %e" data-no-results-string="Sin resultados.">
+</div>
+<header class="main-header"> <p class="page-counter"> <span class="page-counter-label">Pàgina </span><span class="page-counter-content"> <strong class="page-counter-current-page">9</strong><span class="page-counter-sep">/</span><strong class="page-counter-total">12</strong></span></p>
+
+<div class="package-header"><p class="package-title">SA01 · Mirar, pensar i parlar d’art</p></div>
+<div class="page-header"><h1 class="page-title">8. Microgaleria</h1></div>
+</header><div id="page-content-2026090518581800006D" class="page-content">
+<article id="202609051858180000D1" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">Contingut</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260905185818000135" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260905185818000135&quot;}">
+<div class="exe-text-template"><div class="textIdeviceContent"><div class="exe-text-activity"><div><div class="sa"><div class="meta"><span class="tag">Sessió 8</span><span class="tag">Comunicació i transferència</span><span class="tag">Microgaleria</span></div><h2>Parlar d’art amb veu pròpia i rigor</h2>
+<div class="repte"><strong>Objectiu:</strong> defensar el comentari, escoltar interpretacions distintes i transferir el mètode a una obra no treballada.</div>
+<div class="image-slot" role="note"><div class="slot-art" aria-hidden="true"><span></span><i></i><b></b></div><div><strong>MICROGALERIA</strong><p>Espai expositiu o mosaic de les obres comentades · 16:9</p><small>En editar: elimina este marcador i usa «Insereix/edita una imatge».</small></div></div><h3>Microgaleria</h3><ol class="route"><li>Mostra la fitxa visual de l’obra.</li><li>Defensa una idea central en 2 minuts.</li><li>Usa almenys 4 termes específics.</li><li>Relaciona una forma amb un significat.</li><li>Respon una pregunta del públic.</li><li>Registra una idea que t’ha fet repensar l’obra.</li></ol>
+<h3>Transferència final · obra sorpresa</h3><div class="fitxa print"><p><strong>1. Identificació provisional:</strong></p><span class="linia"></span><p><strong>2. Tres observacions:</strong></p><span class="linia"></span><span class="linia"></span><p><strong>3. Anàlisi formal i tècnica:</strong></p><span class="linia"></span><span class="linia"></span><p><strong>4. Hipòtesi de significat o funció i proves:</strong></p><span class="linia"></span><span class="linia"></span><p><strong>5. Quina dada externa necessites verificar?</strong></p><span class="linia"></span></div>
+<div class="quiz" id="q8"><p><strong>Quina evidència demostra millor que pots transferir el mètode?</strong></p><label><input type="radio" name="q8" value="0"> Repetir de memòria el comentari preparat.</label><label><input type="radio" name="q8" value="1"> Aplicar ODAICV a una obra nova i justificar les inferències.</label><label><input type="radio" name="q8" value="2"> Dir el nom de molts artistes.</label><button type="button" onclick="comprova('q8','1')">Comprova</button><button type="button" onclick="mostra('q8exp')">Pista raonada</button><p class="feedback" aria-live="polite"></p><p id="q8exp" hidden>La transferència apareix quan apliques el procés a una situació nova amb criteri i autonomia.</p></div><h3>Metacognició</h3><div class="grid"><div class="card"><h3>Abans pensava…</h3><p>Sobre què era l’art o com es comentava una obra.</p></div><div class="card"><h3>Ara pense…</h3><p>Què ha canviat i quina evidència ho mostra.</p></div><div class="card"><h3>Encara necessite…</h3><p>Un pròxim pas concret per millorar.</p></div></div></div><script>
+function comprova(id,answer){const box=document.getElementById(id),chosen=box.querySelector('input:checked'),out=box.querySelector('.feedback');if(!chosen){out.textContent='Selecciona una resposta.';out.className='feedback ko';return}const ok=chosen.value===answer;out.textContent=ok?'Correcte. Continua!':'Encara no. Revisa la pista i torna-ho a provar.';out.className='feedback '+(ok?'ok':'ko')}
+function mostra(id){const x=document.getElementById(id);x.hidden=!x.hidden}
+</script></div></div></div></div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/7-coavaluar-i-millorar.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/plantilla-de-comentari.html" title="Següent" class="nav-button nav-button-right"><span>Següent</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"><div id="siteUserFooter"> <div><footer class="peu-exe">
+  <div>
+    <strong>IES Gregori Maians · Oliva</strong><br>
+    Història de l’Art · 2n de Batxillerat · Curs 2026–2027
+  </div>
+
+  <div class="peu-dreta">
+    Miquel Gregori Escrivà<br>
+    CC BY-NC-SA 4.0
+  </div>
+</footer></div>
+</div></div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creat amb eXeLearning <span>(Nova finestra)</span></span></a></p>
+</body>
+</html>
