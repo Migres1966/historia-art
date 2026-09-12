@@ -1,1 +1,0 @@
-El favicon principal del recurs és libs/favicon.ico, personalitzat per a Història de l'Art.
