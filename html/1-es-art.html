@@ -870,15 +870,28 @@ summary:focus{
 <p><strong>Definició provisional:</strong> per a mi, una obra d’art és...</p>
 <span class="linia"></span></div>
 <div class="quiz" id="q1">
-<p><strong>Quina frase és una observació?</strong></p>
-<label><input type="radio" name="q1" value="0" /> El marbre simbolitza eternitat.</label></div>
-<div class="quiz"><label><input type="radio" name="q1" value="1" /> La figura està tallada en marbre blanc.</label></div>
-<div class="quiz"><label><input type="radio" name="q1" value="2" /> L’artista vol provocar orgull.</label></div>
-<div class="quiz"><br /></div>
-<div class="quiz"><button type="button" onclick="comprova('q1','1')">Comprova</button><button type="button" onclick="mostra('q1exp')">Pista raonada</button></div>
-<div class="quiz">
-<p class="feedback" aria-live="polite"><br /></p>
-<p id="q1exp" hidden="">Una observació descriu allò visible o verificable; el símbol i la intenció són interpretacions.</p>
+  <p><strong>Quina frase és una observació?</strong></p>
+
+  <label>
+    <input type="radio" name="q1" value="0">
+    El marbre simbolitza eternitat.
+  </label>
+
+  <label>
+    <input type="radio" name="q1" value="1">
+    La figura està tallada en marbre blanc.
+  </label>
+
+  <label>
+    <input type="radio" name="q1" value="2">
+    L’artista vol provocar orgull.
+  </label>
+
+  <button type="button" onclick="comprova('q1','1')">Comprova</button>
+  <button type="button" onclick="mostra('q1exp')">Pista raonada</button>
+
+  <p class="feedback" aria-live="polite"></p>
+  <p id="q1exp" hidden>Una observació descriu allò visible o verificable; el símbol i la intenció són interpretacions.</p>
 </div>
   <div class="idea-clau">
   <h3 style="margin-top:0">🧠 Una idea que utilitzarem tot el curs</h3>
